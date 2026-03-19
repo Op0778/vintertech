@@ -16,7 +16,7 @@ export default function About() {
       image: "https://i.ibb.co/kgshXWSr/Photo-removebg-preview.png",
     },
     {
-      name: "Loga Kumarasen",
+      name: "Loga Kumaresan",
       role: "MD",
       description:
         "Oversees company operations and ensures smooth execution of business strategies.",

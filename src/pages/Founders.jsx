@@ -16,7 +16,7 @@ export default function Founders() {
       image: "https://i.ibb.co/kgshXWSr/Photo-removebg-preview.png",
     },
     {
-      name: "Loga Kumarasen",
+      name: "Loga Kumaresan",
       role: "MD",
       description: "Manages operations and ensures smooth team workflow.",
       image:
