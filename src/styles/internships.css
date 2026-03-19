@@ -1,0 +1,10 @@
+.internships {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.internships .card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: var(--radius);
+}

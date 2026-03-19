@@ -1,0 +1,96 @@
+.about {
+  padding: 60px 0;
+}
+
+/* Company Info */
+.company-info {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.company-info h1 {
+  margin-bottom: 15px;
+}
+
+.company-info p {
+  color: var(--subtext);
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Info Cards */
+.info-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.info-card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: var(--radius);
+  width: 300px;
+}
+
+.card {
+  border: 1px var(--card-bg);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* .card:hover {
+  transform: translateX(-8px);
+  transform: translateY(-15px);
+} */
+
+/* Members */
+.members {
+  text-align: center;
+}
+
+.members h2 {
+  margin-bottom: 30px;
+}
+
+/* Member Cards */
+.member-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.member-card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: var(--radius);
+  width: 250px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.member-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image */
+.member-card img {
+  width: 100%;
+  border-radius: var(--radius);
+}
+
+/* Role */
+.role {
+  color: var(--primary);
+  margin: 5px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .info-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}

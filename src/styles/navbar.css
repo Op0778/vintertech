@@ -1,0 +1,53 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 5%;
+  background: var(--secondary);
+  align-items: center;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+}
+
+/* NEW: Nav links container */
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+/* Style links */
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+/* Auth buttons */
+.auth-btns button {
+  margin-left: 10px;
+  padding: 8px 14px;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+}
+
+/* Login button */
+.login {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--primary);
+}
+
+/* Register button */
+.register {
+  background: var(--primary);
+  color: white;
+}
