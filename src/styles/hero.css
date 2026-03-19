@@ -1,24 +1,91 @@
 .hero {
   text-align: center;
-  padding: 80px 0;
+  padding: 80px 20px; /* added side padding */
 }
 
 .hero h1 {
   font-size: 3rem;
+  margin-bottom: 15px;
 }
 
 .hero p {
   color: var(--subtext);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: auto;
 }
 
+/* Buttons container */
+.hero-btns {
+  margin-top: 20px;
+}
+
+/* Buttons */
 .hero-btns button {
   margin: 10px;
-  padding: 10px 20px;
+  padding: 12px 24px;
   border-radius: var(--radius);
   border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
+/* Hover */
+.hero-btns button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* Primary button */
 .primary {
   background: var(--primary);
   color: white;
+}
+
+/* ========================= */
+/* Tablet (768px and below) */
+/* ========================= */
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+/* ========================= */
+/* Mobile (480px and below) */
+/* ========================= */
+@media (max-width: 480px) {
+  .hero {
+    padding: 50px 15px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  /* Stack buttons */
+  .hero-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-btns button {
+    width: 100%;
+    max-width: 250px;
+    margin: 8px 0;
+  }
 }

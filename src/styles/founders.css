@@ -1,26 +1,81 @@
 .founders {
   text-align: center;
-  padding: 60px 0;
+  padding: 60px 20px; /* added side padding */
 }
 
+.founders h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Cards Container */
 .cards {
   display: flex;
   gap: 20px;
   justify-content: center;
+  flex-wrap: wrap; /* important for responsiveness */
 }
 
+/* Card */
 .card {
   background: var(--card-bg);
   padding: 20px;
   border-radius: var(--radius);
   width: 250px;
+  max-width: 100%;
+  text-align: center;
+  transition: 0.3s;
 }
 
+/* Hover effect */
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* Image */
 .card img {
   width: 100%;
+  height: auto;
   border-radius: var(--radius);
 }
 
+/* Role */
 .role {
   color: var(--primary);
+  margin-top: 5px;
+}
+
+/* ========================= */
+/* Tablet (768px and below) */
+/* ========================= */
+@media (max-width: 768px) {
+  .founders h2 {
+    font-size: 1.6rem;
+  }
+
+  .card {
+    width: 45%; /* 2 cards per row */
+  }
+}
+
+/* ========================= */
+/* Mobile (480px and below) */
+/* ========================= */
+@media (max-width: 480px) {
+  .founders {
+    padding: 40px 15px;
+  }
+
+  .founders h2 {
+    font-size: 1.4rem;
+  }
+
+  .cards {
+    gap: 15px;
+  }
+
+  .card {
+    width: 100%; /* single column */
+    padding: 15px;
+  }
 }

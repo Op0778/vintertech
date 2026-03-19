@@ -1,10 +1,11 @@
 .contact {
-  padding: 60px 0;
+  padding: 60px 20px; /* added side padding */
 }
 
 .contact h2 {
   text-align: center;
   margin-bottom: 40px;
+  font-size: 2rem;
 }
 
 /* Layout */
@@ -13,11 +14,13 @@
   gap: 40px;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap; /* important */
 }
 
 /* Left info */
 .contact-info {
   flex: 1;
+  min-width: 280px;
   color: var(--subtext);
 }
 
@@ -29,9 +32,12 @@
 /* Form */
 .contact-form {
   flex: 1;
+  min-width: 280px;
   background: var(--card-bg);
   padding: 30px;
   border-radius: var(--radius);
+  width: 100%;
+  max-width: 500px;
 }
 
 /* Form group */
@@ -43,18 +49,20 @@
   display: block;
   margin-bottom: 5px;
   color: var(--subtext);
+  font-size: 0.9rem;
 }
 
 /* Inputs */
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 10px;
+  padding: 12px; /* improved touch usability */
   border-radius: var(--radius);
   border: 1px solid var(--secondary);
   background: var(--background);
   color: var(--text);
   outline: none;
+  font-size: 0.95rem;
 }
 
 /* Focus */
@@ -66,7 +74,7 @@
 /* Button */
 .submit-btn {
   width: 100%;
-  padding: 12px;
+  padding: 14px;
   border: none;
   border-radius: var(--radius);
   background: var(--primary);
@@ -80,9 +88,52 @@
   opacity: 0.9;
 }
 
-/* Responsive */
+/* ========================= */
+/* Tablet (768px and below) */
+/* ========================= */
 @media (max-width: 768px) {
+  .contact h2 {
+    font-size: 1.6rem;
+  }
+
   .contact-wrapper {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+}
+
+/* ========================= */
+/* Mobile (480px and below) */
+/* ========================= */
+@media (max-width: 480px) {
+  .contact {
+    padding: 40px 15px;
+  }
+
+  .contact h2 {
+    font-size: 1.4rem;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+    padding: 12px;
   }
 }

@@ -1,10 +1,68 @@
 .internships {
-  padding: 60px 0;
+  padding: 60px 20px; /* added side padding */
   text-align: center;
 }
 
+.internships h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Cards container */
+.internship-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* important */
+}
+
+/* Card */
 .internships .card {
   background: var(--card-bg);
   padding: 20px;
   border-radius: var(--radius);
+  width: 280px;
+  max-width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+
+/* Hover */
+.internships .card:hover {
+  transform: translateY(-6px);
+}
+
+/* ========================= */
+/* Tablet (768px and below) */
+/* ========================= */
+@media (max-width: 768px) {
+  .internships h2 {
+    font-size: 1.6rem;
+  }
+
+  .internships .card {
+    width: 45%; /* 2 per row */
+  }
+}
+
+/* ========================= */
+/* Mobile (480px and below) */
+/* ========================= */
+@media (max-width: 480px) {
+  .internships {
+    padding: 40px 15px;
+  }
+
+  .internships h2 {
+    font-size: 1.4rem;
+  }
+
+  .internship-cards {
+    gap: 15px;
+  }
+
+  .internships .card {
+    width: 100%; /* 1 per row */
+    padding: 15px;
+  }
 }

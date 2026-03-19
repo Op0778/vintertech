@@ -13,14 +13,15 @@ export default function About() {
       name: "Bharath Kumar",
       role: "CTO",
       description: "Leads technology and builds scalable product solutions.",
-      image: "https://i.ibb.co/dsGRLdjV/bharat-removebg-preview.png",
+      image: "https://i.ibb.co/kgshXWSr/Photo-removebg-preview.png",
     },
     {
       name: "Loga Kumarasen",
       role: "MD",
       description:
         "Oversees company operations and ensures smooth execution of business strategies.",
-      image: "https://i.ibb.co/HfMJxphF/logu-removebg-preview.png",
+      image:
+        "https://i.ibb.co/DD6Njsdm/Whats-App-Image-2026-03-19-at-3-33-54-PM-removebg-preview.png",
     },
     {
       name: "Geetha",

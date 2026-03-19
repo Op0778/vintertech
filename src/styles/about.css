@@ -1,5 +1,5 @@
 .about {
-  padding: 60px 0;
+  padding: 60px 20px; /* added side padding for mobile */
 }
 
 /* Company Info */
@@ -10,12 +10,14 @@
 
 .company-info h1 {
   margin-bottom: 15px;
+  font-size: 2rem;
 }
 
 .company-info p {
   color: var(--subtext);
   max-width: 700px;
   margin: auto;
+  font-size: 1rem;
 }
 
 /* Info Cards */
@@ -24,6 +26,7 @@
   gap: 20px;
   justify-content: center;
   margin-top: 30px;
+  flex-wrap: wrap; /* important for responsiveness */
 }
 
 .info-card {
@@ -31,18 +34,15 @@
   padding: 20px;
   border-radius: var(--radius);
   width: 300px;
+  max-width: 100%;
 }
 
+/* Card */
 .card {
-  border: 1px var(--card-bg);
+  border: 1px solid var(--subtext);
   padding: 10px;
   border-radius: 10px;
 }
-
-/* .card:hover {
-  transform: translateX(-8px);
-  transform: translateY(-15px);
-} */
 
 /* Members */
 .members {
@@ -51,6 +51,7 @@
 
 .members h2 {
   margin-bottom: 30px;
+  font-size: 1.8rem;
 }
 
 /* Member Cards */
@@ -66,11 +67,11 @@
   padding: 20px;
   border-radius: var(--radius);
   width: 250px;
+  max-width: 100%;
   text-align: center;
   transition: 0.3s;
 }
 
-/* Hover effect */
 .member-card:hover {
   transform: translateY(-5px);
 }
@@ -78,6 +79,7 @@
 /* Image */
 .member-card img {
   width: 100%;
+  height: auto;
   border-radius: var(--radius);
 }
 
@@ -87,10 +89,54 @@
   margin: 5px 0;
 }
 
-/* Responsive */
+/* ========================= */
+/* Tablet (768px and below) */
+/* ========================= */
 @media (max-width: 768px) {
+  .company-info h1 {
+    font-size: 1.6rem;
+  }
+
+  .company-info p {
+    font-size: 0.95rem;
+  }
+
   .info-cards {
     flex-direction: column;
     align-items: center;
+  }
+
+  .member-card {
+    width: 80%;
+  }
+}
+
+/* ========================= */
+/* Mobile (480px and below) */
+/* ========================= */
+@media (max-width: 480px) {
+  .about {
+    padding: 40px 15px;
+  }
+
+  .company-info h1 {
+    font-size: 1.4rem;
+  }
+
+  .company-info p {
+    font-size: 0.9rem;
+  }
+
+  .info-card {
+    width: 100%;
+  }
+
+  .member-card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .members h2 {
+    font-size: 1.4rem;
   }
 }

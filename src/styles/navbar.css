@@ -2,22 +2,25 @@
   display: flex;
   justify-content: space-between;
   padding: 15px 5%;
-  background: var(--secondary);
+  background-color: var(--radius);
+  border-bottom: 1px solid var(--secondary);
   align-items: center;
+  position: relative;
 }
 
+/* Logo */
 .logo {
   height: 100px;
   width: 100px;
+  object-fit: contain;
 }
 
-/* NEW: Nav links container */
+/* Nav links */
 .nav-links {
   display: flex;
   gap: 25px;
 }
 
-/* Style links */
 .nav-links a {
   text-decoration: none;
   color: var(--text);
@@ -25,12 +28,16 @@
   transition: 0.3s;
 }
 
-/* Hover effect */
 .nav-links a:hover {
   color: var(--primary);
 }
 
 /* Auth buttons */
+.auth-btns {
+  display: flex;
+  align-items: center;
+}
+
 .auth-btns button {
   margin-left: 10px;
   padding: 8px 14px;
@@ -39,15 +46,73 @@
   cursor: pointer;
 }
 
-/* Login button */
+/* Buttons */
 .login {
   background: transparent;
   color: var(--text);
   border: 1px solid var(--primary);
 }
 
-/* Register button */
 .register {
   background: var(--primary);
   color: white;
+}
+
+/* ========================= */
+/* Hamburger (hidden default) */
+/* ========================= */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* ========================= */
+/* Tablet (768px and below) */
+/* ========================= */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Hide nav by default */
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--secondary);
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* Hide buttons inside menu */
+  .auth-btns {
+    display: none;
+  }
+}
+
+/* ========================= */
+/* Mobile (480px and below) */
+/* ========================= */
+@media (max-width: 480px) {
+  .logo {
+    height: 55px;
+    width: 55px;
+  }
+
+  .nav-links {
+    width: 100%;
+    right: 0;
+    text-align: center;
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+  }
 }
