@@ -1,4 +1,5 @@
 import "../styles/internships.css";
+import { Helmet } from "react-helmet-async";
 
 export default function Internships() {
   const domins = [
@@ -16,6 +17,15 @@ export default function Internships() {
   const fromLink = "https://forms.gle/aJfhq2v4VZ5ArAo39";
   return (
     <section className="internships container">
+      <Helmet>
+        <title>Internship Programs | React & Python | Vinter Tech</title>
+        <meta
+          name="description"
+          content="Explore Vinter Tech internship programs in React and Python with real-time projects and certification."
+        />
+      </Helmet>
+
+      <h1>Internships</h1>
       <h2>Internship Openings</h2>
 
       <div className="cards">

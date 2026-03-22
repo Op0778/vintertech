@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vintertech.vercel.app/sitemap.xml

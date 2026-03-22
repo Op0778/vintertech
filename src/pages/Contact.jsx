@@ -1,5 +1,6 @@
 import "../styles/contact.css";
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -59,7 +60,15 @@ export default function Contact() {
 
   return (
     <section className="contact container">
-      <h2>Contact Us</h2>
+      <Helmet>
+        <title>Contact Vinter Tech</title>
+        <meta
+          name="description"
+          content="Contact Vinter Tech for internship details, support, and enrollment information."
+        />
+      </Helmet>
+
+      <h1>Contact Us</h1>
 
       <div className="contact-wrapper">
         {/* Left Info */}
