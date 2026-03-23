@@ -10,7 +10,7 @@ export default function Navbar() {
       {/* Logo */}
       <img
         className="logo"
-        src="https://i.ibb.co/mVyfw3R9/vintertech-removebg-preview.png"
+        src="https://i.ibb.co/ynY8m7LZ/vinter-tech-removebg-resize-removebg-preview.png"
         alt="logo"
       />
 

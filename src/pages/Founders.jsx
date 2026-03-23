@@ -19,8 +19,7 @@ export default function Founders() {
       name: "Loga Kumaresan",
       role: "MD",
       description: "Manages operations and ensures smooth team workflow.",
-      image:
-        "https://i.ibb.co/DD6Njsdm/Whats-App-Image-2026-03-19-at-3-33-54-PM-removebg-preview.png",
+      image: "https://i.ibb.co/84zFrhYn/lk.png",
     },
   ];
 

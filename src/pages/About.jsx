@@ -20,8 +20,7 @@ export default function About() {
       role: "MD",
       description:
         "Oversees company operations and ensures smooth execution of business strategies.",
-      image:
-        "https://i.ibb.co/DD6Njsdm/Whats-App-Image-2026-03-19-at-3-33-54-PM-removebg-preview.png",
+      image: "https://i.ibb.co/84zFrhYn/lk.png",
     },
     {
       name: "Geetha",
